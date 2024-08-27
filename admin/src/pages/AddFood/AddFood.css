@@ -1,0 +1,80 @@
+.add-food{
+    width: 82%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: black;
+    font-size: 16px;
+}
+.add-food form{
+    gap: 12px;
+}
+.add-food h1{
+    margin-bottom: 30px;
+}
+.manesh{
+    color: tomato;
+}
+
+
+.add-img-upload img{
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid tomato;
+}
+
+.uploading-area{
+    display: flex;
+    gap: 15px;
+}
+.uploading-area .food-image img{
+    width: 130px;
+    height: 120px;
+}
+
+.add-product-name, .add-product-description{
+    width: max(40%,280px);
+}
+
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+    outline: none;
+    border: 2px solid tomato;
+    border-radius: 6px;
+    resize: none;
+}
+
+.add-category-price{
+    display: flex;
+    gap: 35px;
+}
+.add-category-price select{
+    cursor: pointer;
+}
+
+.add-category-price select, .add-category-price input{
+    padding: 8px;
+    width: 150px;
+    border: 2px solid tomato;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+.add-btn{
+    max-width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .add-food{
+        height: 80%;
+    }
+    .add-food form{
+        gap: 15px;
+    }
+}

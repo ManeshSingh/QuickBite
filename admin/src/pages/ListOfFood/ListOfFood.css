@@ -1,0 +1,85 @@
+.manesh{
+    color: tomato;
+}
+.list{
+    margin: 20px 7%;
+    width: 65%;
+}
+.list h1{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.list-table{
+    width: 90%;
+}
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 0.8fr 0.6fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px; 
+}
+.list-table-format img{
+    height: 60px;
+    width: 65px;
+}
+.list-table-format.title{
+    background-color: #f9f9f9;
+}
+.list-table-format p{
+    font-size: 1.03rem;
+}
+
+.list-table-format .remove{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.list-table-format .edit_icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:1050px) {
+    .list-table{
+        width: auto;
+    }
+}
+@media (max-width:900px) {
+    .list-table{
+        width: auto;
+    }
+    .list{
+        margin: 40px 5%;
+        width: 90%;
+    }
+    .list-table-format p{
+        font-size: 0.95rem;
+    }
+}
+@media (max-width:550px) {
+    .list{
+        margin: 40px 3%;
+        width: 85%;
+    }
+    .list-table-format{
+        grid-template-columns: 1fr 2fr 1.2fr;
+        gap: 15px;
+        padding: 12px 8px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+    .list-table{
+        width: auto;
+    }
+    .list-table-format p{
+        font-size: 0.8rem;
+    }
+}
