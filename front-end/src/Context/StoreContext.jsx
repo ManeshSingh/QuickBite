@@ -8,7 +8,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const url = "https://quick-bite-backend-seven.vercel.app"     // backend url
+    const url = "https://quickbite-backend-yd8n.onrender.com"     // backend url
     const currency = "₹";
     const deliveryCharge = 30;
     const [token, setToken] = useState("")

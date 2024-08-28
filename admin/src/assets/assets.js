@@ -8,7 +8,7 @@ import upload_icon from './upload_icon.png'
 import edit_icon from './edit_icon.png'
 import remove_icon from './remove_icon.png'
 
-export const url = 'http://localhost:4000'   // backend url
+export const url = 'https://quickbite-backend-yd8n.onrender.com'   // backend url
 export const currency = '₹'
 
 export const assets = {
