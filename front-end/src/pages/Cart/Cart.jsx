@@ -15,7 +15,7 @@ const Cart = () => {
   const promoHandler = (e) => {
     e.preventDefault();
     setPromoDone(true);
-    if(promo === 'QUICKBITE10'){
+    if(promo==='QUICKBITE10' || promo==='QUICKBITE10 '){
       toast.success("Promocode applied")
     }
   }
@@ -74,8 +74,8 @@ const Cart = () => {
             <hr />
 
             <div className="cart-total-details">
-              <h3 className='bill'>{promoDone && promo==='QUICKBITE10' ? 'Bill after discount' : ''}</h3>
-              <h3>{promoDone && promo==='QUICKBITE10' ? (getTotalCartAmount()>0 ? <b>{currency}{getTotalCartAmount()+deliveryCharge - ((getTotalCartAmount()+deliveryCharge)*10)/100}</b> : 0) : <></>}</h3>
+              <h3 className='bill'>{promoDone && (promo==='QUICKBITE10' || promo==='QUICKBITE10 ') ? 'Bill after discount' : ''}</h3>
+              <h3>{promoDone && (promo==='QUICKBITE10' || promo==='QUICKBITE10 ') ? (getTotalCartAmount()>0 ? <b>{currency}{getTotalCartAmount()+deliveryCharge - ((getTotalCartAmount()+deliveryCharge)*10)/100}</b> : 0) : <></>}</h3>
             </div>
 
           </div>
